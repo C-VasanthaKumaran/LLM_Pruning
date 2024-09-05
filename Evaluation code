@@ -1,0 +1,10 @@
+CUDA_VISIBLE_DEVICES=X python post_training.py
+      --prune_model /home/vasanth/Downloads/LLM-Pruner-main/prune_log/tinyllama_chat_prune_log/pytorch_model.bin \ 
+      --data_path yahma/alpaca-cleaned \
+      --lora_r 8 \
+      --num_epochs 2 \ 
+      --learning_rate 1e-4 \ 
+      --batch_size 64 \                                              
+      --output_dir tune_log/home/vasanth/Downloads/LLM-Pruner-main \ 
+      --wandb_project llama_tune
+
